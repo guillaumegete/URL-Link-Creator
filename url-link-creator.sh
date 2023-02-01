@@ -7,7 +7,7 @@ cd ~/Desktop || exit 1
 
 if [ -f "$4.url" ]; then
 
-	osascript -e 'display dialog "Ce lien existe déjà ! Supprimez le lien existant du Bureau puis relancez cette règle pour le régénérer" buttons "OK"'
+	osascript -e 'display dialog "This link already exists ! Delete it from your Desktop, then run the policy again." buttons "OK" default button 1'
 	exit 1
 else
 	echo "[InternetShortcut]
